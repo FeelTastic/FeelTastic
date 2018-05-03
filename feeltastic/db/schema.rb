@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20180503004454) do
 
-  create_table "activities_tables", force: :cascade do |t|
+  create_table "activities", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.datetime "date"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180503004454) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "goals_tables", force: :cascade do |t|
+  create_table "goals", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "user_id"
@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 20180503004454) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "teams_tables", force: :cascade do |t|
+  create_table "teams", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "user_id"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20180503004454) do
     t.datetime "updated_at",  null: false
   end
 
-  create_table "users_tables", force: :cascade do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.string   "password"

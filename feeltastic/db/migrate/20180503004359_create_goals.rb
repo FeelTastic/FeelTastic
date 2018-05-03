@@ -1,9 +1,8 @@
-class CreateActivitiesTable < ActiveRecord::Migration[5.0]
+class CreateGoals < ActiveRecord::Migration[5.0]
   def change
-    create_table :activities_tables do |t|
+    create_table :goals do |t|
       t.string :name
       t.string :description
-      t.datetime :date
       t.integer :user_id
 
       t.timestamps

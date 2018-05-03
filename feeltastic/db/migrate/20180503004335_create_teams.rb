@@ -1,6 +1,6 @@
-class CreateGoalsTable < ActiveRecord::Migration[5.0]
+class CreateTeams < ActiveRecord::Migration[5.0]
   def change
-    create_table :goals_tables do |t|
+    create_table :teams do |t|
       t.string :name
       t.string :description
       t.integer :user_id
